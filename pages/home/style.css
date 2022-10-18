@@ -1,0 +1,238 @@
+@import url(/styles/styles.css);
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+     width: 100vw;
+     height: 100vh;
+}
+
+main{
+    display: flex;
+}
+
+.background-image{
+    height: 500px;
+    width: 500px;
+    background-image: url('/images/bola-LogoCompasso.svg');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    position: relative;
+    left: -55px;
+}
+
+.header_home{
+    width: 100%;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_home img{
+    width: 150px;
+    height: 42.75px;
+    margin: 25px 0 0 40px;
+}
+
+.date_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date_header h1{
+    font-weight: 700;
+    font-size: 144px;
+}
+
+.date_header p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.temperatura{
+    margin: 25px 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temperatura h1{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.temperatura .temperatura_inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperatura_inner img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    top: -10px;
+}
+
+.temperatura .temperatura_inner h2{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.image-bola_compass{
+    margin-top: 25px;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+
+.texto_principal{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.texto_principal p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px
+}
+
+.texto_principal h4{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-font-home);
+}
+
+.texto_principal h1{
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--color-font-home);}
+
+.rodape{
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+}
+
+.container-paragrafo_rodape{
+    height: 61px;
+    display: flex;
+    align-items: center;
+    border-right: solid 1px var(--branco);
+}
+
+.container-paragrafo_rodape p{
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: var(--branco);
+    padding-right: 35px;
+}
+
+.descricao_counter_rodape{
+    margin-left: 123px;
+    font-size: 14px;
+    text-align: right;
+    color: var(--branco);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.container_counter{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    margin-right: 326px;
+}
+
+.container_counter h1{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.container_counter p{
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.button_rodape{
+    width: 131px;
+    font-weight: 400;
+    font-size: 12px;
+    border: none;
+}
+
+ .background_white{
+    background-color: var(--branco);
+    color: var(--color-font-home);}
+
+ .background_escuro{
+    background-color: #1C1D20;
+    color: var(--branco);
+}
+
+.popup{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: 0.3s;
+    
+}
+
+.show_popup{
+    transform: translateY(0%);
+    display: flex;
+}
+
+.popup_int{
+    background: var(--background);
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+
+}
+
+.text-popup{
+    font-size: 30px;
+}
+
+.buttons_popup{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.button_popup{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--branco);
+    font-size: 20px;
+}

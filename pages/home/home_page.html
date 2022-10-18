@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass - Home</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header_home">
+        <img src="/images/LogoCompasso.svg" alt="Logo Compasso">
+        <div class="date_header">
+            <h1 id="horario"></h1>
+            <p id="data"></p>
+        </div>
+        <div class="temperatura">
+            <h1 id="localizade"></h1>
+            <div class="temperatura_inner">
+                <img alt="Icon Tempo" id="icone_temp">
+                <h2 id="graus_temp"></h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="background-image"></div>
+        <div class="popup" id="popupId">
+            <div class="popup_int">
+                <h1 class="text-popup">Deseja continuar logado?</h1>
+                <div class="buttons_popup">
+                    <button class="button_popup" id="buttonSim">Sim</button>
+                    <button class="button_popup" id="buttonNao">Não</button>
+                </div>
+            </div>
+        </div>
+        <div class="texto_principal">
+            <h4>Our mission is</h4>
+            <p>Nossa missão é</p>
+            <h1>to transform the world</h3>
+            <p>transformar o mundo</p>
+            <h1>building digital experiences</h2>
+            <p>construindo experiências digitais</p>
+            <h1>that enable our clientes growth</h1>
+            <p>que permitam o crescimento dos nossos clientes</p>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="container-paragrafo_rodape">
+            <p>Essa janela do navegador é usada para manter sua sessão de 
+                autenticação ativa. Deixe-a<br> aberta em segundo plano e abra 
+                uma nova janela para continuar a navegar.
+            </p>
+        </div>
+        <h1 class="descricao_counter_rodape">Application <br>refresh in</h1>
+        <div class="container_counter">
+            <h1 id="contador_seconds"></h1>
+            <p>seconds</p>
+        </div>
+        <button class="button_rodape background_white" id="buttonContinuar">Continuar <br>Navegando</button>
+        <button class="button_rodape background_escuro" id="buttonLogout">Logout</button>
+    </footer>
+
+    <script src="/js/checkInputs.js"></script>
+    <script src="/js/get_date.js"></script>
+    <script src="/js/count.js"></script>
+    <script src="/js/get_clima.js"></script>
+    <script src="/js/button_footer.js"></script>
+</body>
+</html>
