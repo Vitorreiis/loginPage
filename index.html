@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass - Login</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb98ed88c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="background">
+        <div class="container">
+            <form id="form">
+                <div class="title-group">
+                    <h1>Olá,</h1>
+                    <p id="paragrafo-title_group">Para continuar navegando de forma<br> segura, efetue o login na rede.</p>
+                </div>
+                <h2 class="title-login">Login</h2>
+                <div class="input-group">
+                    <div class="input-email">
+                        <input type="text" name="username" id="username" placeholder="Usuário">
+                        <i class="fa-solid fa-user color-icon"></i>
+                    </div>
+                    <div class="input-password">
+                        <input type="password" name="password" id="password" placeholder="Senha" maxlength="10">
+                        <i class="fa-solid fa-lock color-icon"></i>
+                    </div>
+                    <div class= "text-error-none">
+                        <h4 id="h4-error">Ops, usuário ou senha inválidos.<br> Tente novamente!</h4>
+                    </div>
+                </div>  
+                <div class="button-group">
+                    <button type="submit" value="ENTRAR" class="button_form">Continuar</button>
+                </div>
+            </form>      
+        </div>
+    </main>
+    
+    <div class="background image"></div>
+
+    <script type="module" src="/js/index.js"></script>
+</body>
+</html>

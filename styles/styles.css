@@ -1,0 +1,246 @@
+/* Definindo propriedades globais da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* Variáveis para reutilização no código */
+:root {
+    --branco: white;
+    --text-base: #afb6c2;
+    --text-title: #E0E0E0;
+    --background:linear-gradient(#32373C 0%, #1C1D20 100%);
+    --form-background: #24221f;
+    --primary-color: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+    --error: #E9B425;
+    --font-family: 'Poppins', sans-serif;;
+    --color-font-home: #C12D18;
+
+}
+
+/* Definindo propriedades do body */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.background, .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    width: 50%;
+    height: 100vh;
+    background: var(--background);
+    position: relative;
+}
+
+.background.image {
+    background-image: url(/images/side-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+/* Propriedades para o logotipo */
+#logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px;
+}
+
+/* Divisão que contém o formulário incluso */
+.container {
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+    margin: 0 70px;
+}
+
+/* Divisão que contém o título da página e o ícone decorativo para login */
+.title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-bottom: 6.25rem;
+}
+
+/* Título da página */
+.title-group h1{
+    color: var(--text-title);
+    font-weight: 400;
+    font-size: 60px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Parágrafo do formulário */
+.title-group p{
+    font-family: var(--font-family);
+    color: var(--text-base);
+    margin-bottom: 1.6rem;
+}
+
+.title-login{
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+
+/* Formulário */
+form{
+    margin: 0 40px;
+    width: 100%;
+    max-width: 379px;
+}
+
+
+/* Divisão que contém inputs para email e senha */
+.input-group {
+    margin-bottom: 20px
+}
+
+/* Divião que contém os inputs e seus icones inclusos */
+.input-email, .input-password{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.color-icon{
+    color: var(--text-base);
+    margin-left: 18px;
+}
+
+.input-password{
+    margin: 33px 0 28px 0;
+}
+
+/* Inputs do formulário para senha e email */
+.input-group input{
+    width: 100%;
+    max-width: 348px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: solid 1px var(--branco);
+    padding-left: 20px;
+    font-family: var(--font-family);
+    color: var(--text-base);
+    transition: ease-in 0.2s all;
+}
+
+/* Textos fantasmas dos inputs */
+.input-group input::placeholder{
+    font-family: var(--font-family);
+}
+
+/* Efeito ao selecionar um input */
+.input-group input:focus{
+    border-color: var(--primary-color);
+}
+
+.input-error input{
+    border-color: var(--error);
+}
+
+.text-error-none{
+    border-color: var(--error);
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--error);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.text-error-block{
+    display: block;
+}
+
+/* Botão do formulário */
+.button_form {
+    width: 100%;
+    max-width: 348px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    background: var(--primary-color);
+    color: #473404;
+    transition: ease-in 0.2s all;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.button-group {
+    display: flex;
+    gap: 26px;
+    margin-top: 47px;
+}
+
+/* Efeito ao passar o ponteiro em cima do botão */
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+@media (max-width:1000px){
+
+    .title-group h1{
+        font-size: 35px;
+    }
+    .title-login{
+        font-size: 30px;
+    }
+
+   .background:first-child{
+        position: absolute;
+        width: 100%;
+    }
+
+    .background.image{
+        display: none;
+    }
+
+    .container{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media(max-width:360px){
+    .title-group h1{
+        font-size: 30px;
+    }
+    .title-login{
+        font-size: 20px;
+    }
+    form{
+        margin-top: 20px;
+    }
+
+    html{
+        font-size: 13px;
+    }
+
+    #checkbox {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }  
+}
