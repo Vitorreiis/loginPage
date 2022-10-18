@@ -1,3 +1,11 @@
+/*
+* 
+* 
+* Arquivo que coleta a Data e hora e aplica no HTML
+* 
+* 
+*/
+
 var display = document.querySelector('#horario');
 var displaydate = document.querySelector('#data');
 

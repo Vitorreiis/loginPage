@@ -1,5 +1,6 @@
 @import url(/styles/styles.css);
 
+/*Estilizando o body*/
 body{
     width: 100%;
     height: 100%;
@@ -9,10 +10,13 @@ body{
      height: 100vh;
 }
 
+/*Aplicando display flex no main*/
+
 main{
     display: flex;
 }
 
+/*Estilizando a imagem da bola da Compass*/
 .background-image{
     height: 500px;
     width: 500px;
@@ -23,6 +27,7 @@ main{
     left: -55px;
 }
 
+/*Estilizando o header*/
 .header_home{
     width: 100%;
     background-color: var(--branco);
@@ -83,6 +88,9 @@ main{
     font-size: 48px;
 }
 
+/*Comecando a estilizar o Main*/
+
+/*Estilizando a imagem da bola da Compass*/
 .image-bola_compass{
     margin-top: 25px;
     width: 100%;
@@ -115,6 +123,8 @@ main{
     font-size: 64px;
     color: var(--color-font-home);}
 
+
+/*Estilizando o rodapé*/
 .rodape{
     display: flex;
     height: 100%;
@@ -184,6 +194,8 @@ main{
     color: var(--branco);
 }
 
+
+/*Estilizando o popup*/
 .popup{
     position: fixed;
     top: 0px;

@@ -1,3 +1,11 @@
+/*
+* 
+* 
+* Arquivo temporizador de 600 segundos para redirecionar para a LoginPage
+* 
+* 
+*/
+
 const displaySeconds = document.getElementById('contador_seconds');
 
 

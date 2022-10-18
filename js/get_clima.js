@@ -1,3 +1,11 @@
+/*
+* 
+* 
+* Arquivo que consome uma API e aplica no html o clima
+* 
+* 
+*/
+
 const iconeTemp = document.getElementById('icone_temp');
 const grausTemp = document.getElementById('graus_temp');
 const localidade = document.getElementById('localizade');
